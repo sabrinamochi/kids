@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Kids Word development</title>
+    <script src="lib/d3.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+
+    <div id="headline">
+        <h1> When Do </br>
+            Kids Learn </br>
+            Certain <span class='orange'>Words?</span></h1>
+
+        <p class="small">by Szu Yu Chen</p>
+    </div>
+
+    <div id="data-explain">
+
+        <div class='sideleft'></div>
+        <div class='middle'>
+            <h2> Data </h2>
+            <p class='paragraph'> <a href='http://wordbank.stanford.edu/'>Wordbank</a>, an open database of children's
+                vocabulary development,
+                provides a way for people to generate analyses of vocabulary growth for different groups of children.
+                Through its dataset, we can answer question like, <span>"how many kids are reported to produce
+                    mommy or alligator at 16 months?"</span>
+                Out of my own curiosity, I explore some interesting "words" that are earliest or latest learned in
+                English. </br>
+
+                I use gradient colors to represent the percentage of kids producing certain words. </br></br>
+
+                For example, <span>93%</span> of 16-month-old kids can pronounce <span>"mommy"</span>, which is
+                represented by an <span class='orange'>orange</span> color.
+                However, only around <span id='less'>3%</span> of kids at 16 months can pronounce
+                <span>"alligator"</span>, which is represented by a <span id='light'>lighter</span> color.
+
+            </p>
+            <div id='explain-dog'></div>
+
+            <div class='scroll'> Scroll </div>
+            <div id="arrow">
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+        <div class='sideright'></div>
+    </div>
+
+    <div id="intro" class="two-col">
+        <div class="left" id="subset"></div>
+        <div class="right">
+            <p id="right1">
+                <h3>No! No! No!</h3>
+                64% of kids at 16 months learn how to say no,
+                while only 35% of them learn to say yes.
+                </br></br></br></br></br></br></br></br></br></br>
+                </br></br></br>
+            </p>
+            <p id="right2">
+                <h3>And then they say yes.</h3>
+                As they grow older, they start saying yes. (Finally!!!)
+                </br></br></br></br></br></br></br></br></br></br>
+                </br></br></br>
+            </p>
+            <p id="right3">
+                <h3>Kids learn love, but not hate.</h3>
+                More than half of the kids at 23 months learn to say "love". Around 90% of 30-month-old kids can
+                pronounce "love" as well.
+                Only 27% of kids at 30 months learn to say "hate."
+
+                </br></br></br></br></br></br></br></br></br></br>
+                </br></br></br>
+            </p>
+
+            <p id="right4">
+                <h3>More penis </br>Less vagina</h3>
+                37% of kids who are 30-month-old learn to say "vagina" while more than 54% of them
+                can say "penis." </br></br>
+
+                PS: The composition of the database for English(American) contains 3,203 females and 3,408
+                males.
+                </br></br></br></br></br></br></br></br></br></br>
+                </br></br></br></br>
+            </p>
+        </div>
+
+
+    </div>
+
+        <div id="main">
+            <h2> Explore it yourself</h2>
+            <div id="dropdown">
+                <div id="typeDropdown"> Type </div>
+                <div id="monthDropdown"> Age </div>
+            </div>
+            <div id="legend-explain">% of Kids Producing The Word</div>
+            <div id="legend"></div>
+            <div id="heatmap"></div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/heat_map_all.js"></script>
+    <script src="js/heat_map_subset.js"></script>
+    <script src="js/dog.js"></script>
+
+</body>
+
+</html>
