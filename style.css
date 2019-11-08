@@ -91,6 +91,7 @@ span {
     justify-content: space-around;
     height: 2700px;
     position: relative;
+    -webkit-overflow-scrolling: touch;
 }
 
 
