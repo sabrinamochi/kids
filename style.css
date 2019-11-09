@@ -214,15 +214,15 @@ h3{
 }
 
 #headline {
-    height:400px;
+    height:460px;
     margin: auto;
 }
 
 h1 {
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 6rem;
-    line-height: 3rem;
+    padding-top: 8rem;
+    line-height: 4rem;
     text-align: center;
     padding-left:0;
 
@@ -245,6 +245,7 @@ h2 {
     font-size: 16px;
     padding-left: 6rem;
     padding-right: 6rem;
+    padding-top: 8rem;
 }
 
 .middle > p {
@@ -262,7 +263,7 @@ h2 {
 }
 
 #explain-dog {
-    padding-left: 5rem;
+    padding-left: 7rem;
 }
 
 .scroll {
@@ -286,7 +287,7 @@ h3 {
 }
 
 .right {
-    padding-top: 0;
+    padding-top: 10rem;
     padding-right: 15rem;
     padding-left:15rem;
     font-size:13px;
