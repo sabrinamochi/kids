@@ -97,6 +97,7 @@ span {
 .left { order:1;
         flex: 1 2rem;
         position: sticky;
+        position: -webkit-sticky;
         top:0;
         height:500px;
         padding-left: 4rem;
