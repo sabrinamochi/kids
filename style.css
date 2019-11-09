@@ -89,7 +89,6 @@ span {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    height: 2700px;
     position: relative;
     -webkit-overflow-scrolling: touch;
 }
@@ -219,7 +218,7 @@ h3{
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 6rem;
     line-height: 3rem;
@@ -229,7 +228,7 @@ h1 {
 }
 
 .small{
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     padding-left: 0;
 }
@@ -243,17 +242,17 @@ h2 {
 
 .middle { 
     font-size: 16px;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .middle > p {
 
     margin-left: 5rem;
     margin-right: 5rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #data-explain{
@@ -262,34 +261,35 @@ h2 {
 }
 
 #explain-dog {
-    padding-left: 2rem;
+    padding-left: 5rem;
 }
 
 .scroll {
-    padding-left: 17rem;
+    padding-left: 20rem;
 }
 
 #arrow{
-    padding-left: 17rem;
-}
-
-.two-col{
-    height: 3500px;
+    padding-left: 20rem;
 }
 
 
 .left { 
         padding-left:10rem;
         height:0;
-        padding-top:30rem;
+        padding-top:40rem;
 
 
 }
 
+h3 {
+    font-size:22px;
+}
+
 .right {
     padding-top: 0;
-    padding-right: 20rem;
-    padding-left:20rem;
+    padding-right: 15rem;
+    padding-left:15rem;
+    font-size:13px;
 
 }
 
