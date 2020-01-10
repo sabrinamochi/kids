@@ -203,6 +203,11 @@ h3{
      font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#right1, #right2, #right3, #right4{
+    background-color:rgba(255,255,255,1);
+    padding: 1em 2em;
+}
+
 
 /* ----------- Phone ----------- */
 
@@ -219,10 +224,10 @@ h3{
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 65px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 8rem;
-    line-height: 4rem;
+    line-height: 5rem;
     text-align: center;
     padding-left:0;
 
@@ -237,7 +242,7 @@ h1 {
 
 
 h2 {
-    font-size: 30px;
+    font-size: 42px;
 }
 
 
@@ -250,11 +255,11 @@ h2 {
 
 .middle > p {
 
-    margin-left: 5rem;
-    margin-right: 5rem;
-    line-height: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 2em;
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 #data-explain{
@@ -263,7 +268,7 @@ h2 {
 }
 
 #explain-dog {
-    padding-left: 6rem;
+    padding-left: 6.5rem;
 }
 
 .scroll {
@@ -278,8 +283,6 @@ h2 {
         padding-left:10rem;
         height:0;
         padding-top:40rem;
-
-
 }
 
 h3 {
@@ -288,14 +291,12 @@ h3 {
 
 .right {
     padding-top: 10rem;
-    padding-right: 15rem;
-    padding-left:15rem;
-    font-size:13px;
+    font-size:12px;
 
 }
 
 #right1, #right2, #right3, #right4{
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(255,255,255,1);
 }
 
 #main{

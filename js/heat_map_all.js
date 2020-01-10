@@ -11,8 +11,6 @@ var converter = function(d){
 d3.csv("data/heatmap.csv", converter).then(function(data){
 
 
-    console.log(data)
-
     var heat_height = document.querySelector("#heatmap").clientHeight;
     var heat_width = document.querySelector("#heatmap").clientWidth;
     var margin = {top: 50, bottom: 50, left:90, right:0};
@@ -149,7 +147,7 @@ d3.csv("data/heatmap.csv", converter).then(function(data){
     }
     var mousemove = function (d) {
         tooltip
-            .html(d.learn*100 + "%")
+            .html(Math.round(d.learn*100) + "%")
             .style("left", (d3.mouse(this)[0]) + "px")
             .style("top", (d3.mouse(this)[1] -8 ) + "px");
 
@@ -210,8 +208,6 @@ d3.csv("data/heatmap.csv", converter).then(function(data){
             return d.age === month[selectedMonth] && d.type === type[selectedType];
             }
         });
-        console.log(type[selectedType]);
-        console.log(data.type === type[selectedType]);
         updateType(newType);
 
     })
@@ -249,6 +245,12 @@ d3.csv("data/heatmap.csv", converter).then(function(data){
     function updateType(data) {
 
 
+        rect
+            .on("mouseover", "none")
+            .on("mousemove", "none")
+            .on("mouseleave", "none");
+
+
         var r = svg.selectAll("rect")
             .data(data, function (d) { return d.age + ":", d.word; });
 
@@ -273,7 +275,10 @@ d3.csv("data/heatmap.csv", converter).then(function(data){
             .attr("fill", function (d) { return color(+d.learn) })
             .attr("stroke", "none")
             .attr("stroke-width", 4)
-            .style("opacity", 0.8);
+            .style("opacity", 0.8)
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave);
 
         r.exit()
             .transition()
@@ -285,6 +290,11 @@ d3.csv("data/heatmap.csv", converter).then(function(data){
 
 
     function updateMonth(data) {
+
+        rect
+            .on("mouseover", "none")
+            .on("mousemove", "none")
+            .on("mouseleave", "none");
 
 
         var r = svg.selectAll("rect")
@@ -311,7 +321,10 @@ d3.csv("data/heatmap.csv", converter).then(function(data){
             .attr("fill", function (d) { return color(+d.learn) })
             .attr("stroke", "none")
             .attr("stroke-width", 4)
-            .style("opacity", 0.8);
+            .style("opacity", 0.8)
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave);
 
         r.exit()
          .transition()
